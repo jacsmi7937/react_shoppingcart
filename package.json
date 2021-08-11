@@ -1,5 +1,6 @@
 {
   "name": "app",
+  "homepage": "https://jacsmi7937.github.io/react_spa1/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,6 +23,8 @@
     "wdio": "wdio",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test:coverage": "npm run test -- --coverage",
     "format": "prettier --write \"**/*.+(js|json|css)\"",
     "eject": "react-scripts eject"
